@@ -1,3 +1,8 @@
+
+import abstractton.Animal2;
+import abstractton.AnimalImpl;
+import abstractton.AnimalInterface;
+import abstractton.Dog2;
 import inheritance.Cat;
 import inheritance.Meow;
 import polymorphism.Animal1;
@@ -31,8 +36,15 @@ public class Main {
 //        int b = calculator.add(1,2);
 //        System.out.println(i);
 //        System.out.println(b);
+//
+//        Animal1 dog1 = new Dog1();
+//        dog1.sound();
 
-        Animal1 dog1 = new Dog1();
-        dog1.sound();
+        Animal2 dog2 = new Dog2();
+        dog2.sound();
+        dog2.walk();
+
+        AnimalInterface animal = new AnimalImpl();
+        animal.sound();
     }
 }
